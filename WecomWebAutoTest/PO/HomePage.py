@@ -12,7 +12,7 @@ class HomePage(BasePage):
 
 
         # 点击添加成员
-        self.driver.find_element(By.CLASS_NAME, "index_service_cnt_item_title").click()
+        self.driver.find_element(By.CSS_SELECTOR, ".index_service_cnt_itemWrap:nth-child(1)").click()
 
 
         return AddMembersPage()
